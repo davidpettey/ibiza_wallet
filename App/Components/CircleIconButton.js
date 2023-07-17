@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { Send, Copy } from "react-native-feather";
-
 import Constants from '../Constants/Constants';
 
 
@@ -11,7 +10,7 @@ const CircleIconButton = ({label})=> {
 
   const foo = () => {
     label == "Send" ? 
-    console.log("Send") :
+    console.log("Send") : 
     console.log("Copy");
   }
   

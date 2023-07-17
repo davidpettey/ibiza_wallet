@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+
 import { Modal, Pressable, TouchableOpacity, Text, View } from 'react-native';
 import CircleIconButton from '../Components/CircleIconButton';
 import Constants from '../Constants/Constants';
 
-const Dashboard = () => {
+const Dashboard = ({Wallet}) => {
     const [modalVisible, setModalVisible] = useState(false);
     
     return (
       <View style={{ height:'100%' }}>
           <View style= {{ flexDirection:'row', height:100, alignItems:'center', justifyContent:"center" }}>
             <Text style={{fontSize:24, color:Constants.white, fontFamily:Constants.fontBold}}>
-              Some name?
+              {Wallet.name}
             </Text>
           </View>
           
@@ -61,7 +62,7 @@ const Dashboard = () => {
           <Pressable
             style={{}}
             onPress={() => setModalVisible(true)}>
-            <Text style={{}}>Show Modal</Text>
+            <Text style={{fontFamily:Constants.fontRegular, color:Constants.white}}>Show Modal</Text>
           </Pressable>
         
       </View>

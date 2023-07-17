@@ -4,17 +4,19 @@ import Constants from '../Constants/Constants';
 
 const SignIn = () => {
 
-  foo = () => { }
+  grabWallet = () => {
+    
+  }
   
   return (
     <View style= {{ height:'100%', alignItems:'center', justifyContent:"center"}}>
       <Text style={{fontSize:30, color:Constants.white, fontFamily:Constants.fontBold}}>
         BioWallet
       </Text>
-      <TouchableOpacity style={{width:'100%', alignContent:'center', justifyContent:'center', marginTop:20}}>
+      <TouchableOpacity onPress={this.grabWallet} style={{width:'100%', alignContent:'center', justifyContent:'center', marginTop:20}}>
         <View style={{backgroundColor:Constants.blue, borderRadius:25, height:50, width:'75%', justifyContent:'center', alignSelf:'center'}}>
           <Text style={{fontFamily:Constants.fontRegular, fontSize:18, color:Constants.white, textAlign:'center'}}>
-            Sign In
+            Grab Wallet
           </Text>
         </View>
       </TouchableOpacity>
